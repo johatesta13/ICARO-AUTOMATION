@@ -1,0 +1,42 @@
+
+dame una guia basica de github para que se creen un repo y subirlo
+
+
+Estructuró guía práctica sobre crear y subir repositorios GitHub.
+
+
+
+Aquí te va una guía básica para crear un repositorio en GitHub y subir tu código:
+
+Configuración inicial
+Primero necesitas instalar Git en tu computadora y configurarlo con tu nombre y email:
+
+bash
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@ejemplo.com"
+Crear el repositorio en GitHub
+Entra a github.com y haz clic en el botón verde "New" o en el "+" arriba a la derecha y selecciona "New repository". Dale un nombre a tu repo, decide si será público o privado, y puedes agregar un README si quieres. Luego haz clic en "Create repository".
+
+Subir código existente
+Si ya tienes código en tu computadora, abre la terminal en la carpeta de tu proyecto y ejecuta:
+
+bash
+git init
+git add .
+git commit -m "Primer commit"
+git branch -M main
+git remote add origin https://github.com/tuusuario/nombre-del-repo.git
+git push -u origin main
+Empezar desde cero
+Si prefieres clonar el repo vacío primero:
+
+bash
+git clone https://github.com/tuusuario/nombre-del-repo.git
+cd nombre-del-repo
+Luego agrega tus archivos, y cuando quieras subir cambios:
+
+bash
+git add .
+git commit -m "Descripción de los cambios"
+git push
+El flujo básico siempre es: modificas archivos → git add → git commit → git push. ¿Necesitas ayuda con algo específico de Git o GitHub?
